@@ -1,0 +1,138 @@
+/* Estilos generales del body */
+body {
+  margin: 0; /* Eliminar el margen por defecto */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Fuente de sistema y sans-serif para mejor legibilidad */
+  -webkit-font-smoothing: antialiased; /* Suavizado de fuentes en Webkit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado de fuentes en Firefox en OSX */
+  background-image: url('corazon.png'); /* Fondo con PNG transparente */
+  background-size: 25%; /* Ajustar el tamaño del fondo para cubrir toda el área */
+  background-position: 10% 9%; /* Centrar el fondo */
+  background-repeat: no-repeat; /* No repetir la imagen del fondo */
+}
+
+/* Estilos para el elemento code */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Fuente para mostrar código */
+}
+
+/* Estilos aplicados a todos los elementos */
+* {
+  font-family: "Lobster", cursive; /* Fuente cursiva Lobster para todo el texto */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+/* Ocultar el reproductor de música */
+audio {
+  display: none;
+}
+
+/* Estilos para el contenedor principal de la aplicación */
+.Aplicacion-cuerpo {
+  min-height: 80vh; /* Altura mínima de 80% del viewport */
+  display: flex; /* Usar flexbox para el diseño */
+  flex-direction: column; /* Disposición en columna */
+  align-items: center; /* Alinear elementos al centro horizontalmente */
+  justify-content: center; /* Justificar contenido al centro verticalmente */
+}
+
+/* Estilos para el texto dentro de la aplicación */
+.Aplicacion-texto {
+  font-size: calc(10px + 4vmin); /* Tamaño de fuente dinámico */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el texto con efecto hover */
+.Aplicacion-texto:hover {
+  color: #391253; /* Color al pasar el ratón sobre el texto */
+}
+
+/* Estilos para los GIFs de la aplicación */
+.Aplicacion-gif {
+  width: 300px; /* Ancho del GIF */
+  height: 350px; /* Altura del GIF */
+}
+
+/* Estilos para los botones de la aplicación */
+.Aplicacion-boton {
+  margin: 10px; /* Margen alrededor del botón */
+  padding: 15px 20px; /* Relleno dentro del botón */
+  font-size: 20px; /* Tamaño de la fuente del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* Estilos para el botón de aceptación */
+.Aplicacion-boton.aceptar {
+  background-color: #ff4d4d; /* Color de fondo del botón de aceptación */
+}
+
+/* Estilos para el botón de aceptación en estado hover */
+.Aplicacion-boton.aceptar:hover {
+  background-color: #e60000; /* Cambio de color de fondo al pasar el ratón */
+}
+
+/* Estilos para el botón de rechazo */
+.Aplicacion-boton.rechazar {
+  background-color: #666; /* Color de fondo del botón de rechazo */
+}
+
+/* Estilos para el botón de rechazo en estado hover */
+.Aplicacion-boton.rechazar:hover {
+  background-color: #404040; /* Cambio de color de fondo al pasar el ratón */
+}
+
+/* Estilos para el contenido antes del botón */
+.Aplicacion-boton:before {
+  content: "\1F498"; /* Emoji de corazón */
+  font-size: 20px; /* Tamaño del emoji */
+  margin-right: 5px; /* Espacio a la derecha del emoji */
+}
+
+/* Estilos para el contenido antes del botón de rechazo */
+.Aplicacion-boton.rechazar:before {
+  content: "\1F494"; /* Emoji de corazón roto */
+  color: #666; /* Color del emoji para el botón de rechazo */
+}
+
+/* Estilos para el texto de éxito */
+.Aplicacion-texto-exito {
+  font-size: 19px; /* Tamaño de fuente del texto de éxito */
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilos para el contenido antes del texto de éxito */
+.Aplicacion-texto-exito:before {
+  content: "\1F496"; /* Emoji de corazón con brillo */
+  color: #ff4d4d; /* Color del emoji */
+  margin-right: 5px; /* Espacio a la derecha del emoji */
+  font-size: 24px; /* Tamaño del emoji */
+}
+
+/* Estilos para el texto de éxito en estado hover */
+.Aplicacion-texto-exito:hover {
+  color: #ff4d4d; /* Cambio de color del texto al pasar el ratón */
+}
+
+/* Estilos para el texto de la fecha */
+.Aplicacion-texto-fecha {
+  font-size: 18px; /* Tamaño de fuente del texto de la fecha */
+}
+
+/* Estilos para el contenido antes del texto de la fecha */
+.Aplicacion-texto-fecha:before {
+  content: "\1F495"; /* Emoji de corazón rosa */
+  color: #ff4d4d; /* Color del emoji */
+  margin-right: 5px; /* Espacio a la derecha del emoji */
+}
+
+/* Estilos para el contenedor de éxito */
+.Aplicacion-exito {
+  padding: 20px; /* Relleno alrededor del contenido */
+}
